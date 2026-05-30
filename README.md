@@ -45,10 +45,3 @@ For each major exploit phase, findings were structurally isolated using the corp
 * **How to overcome the issue?** Actionable secure coding recommendations (such as Parameterized Queries, strict Context-Aware Output Encoding, Java Security Managers, and Host-Based Firewall/ACL controls).
 
 ---
-
-## 📂 Repository Structure
-```text
-├── 01-Reconnaissance/          # Subdomain discovery scripts and text target logs
-├── 02-Web-Exploitation/        # DVWA injection payloads, SQLmap logs, and XSS scripts
-├── 03-Network-Exploitation/    # Metasploit command scripts, Nmap outputs, and post-exp data
-└── Documentation/              # Executive Reports, PoC captions, and structural PDFs
