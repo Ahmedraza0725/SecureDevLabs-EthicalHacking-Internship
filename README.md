@@ -1,4 +1,4 @@
-# Ethical Hacking Internship – Secure Dev Labs
+# Ethical Hacking Internship in Secure Dev Labs
 
 Welcome to my portfolio repository documenting the practical security assessments, vulnerability research, and penetration testing tasks completed during my Ethical Hacking Internship at **Secure Dev Labs**.
 
